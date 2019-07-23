@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Selector</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link href="css/style.css" rel="stylesheet" media="screen" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row content-padding-lg text-center">
+        <div class="col-md-12 selection">
+          <h2 class="section-title">Find a gas station in your city</h2>
+          <p>Choose your city from below list</p>
+          <label for="select">choose</label>
+          <select id="select" class="selectpicker" data-style="btn-primary">
+            <option value="city">your city</option>
+            <option value="paris">paris</option>
+            <option value="london">london</option>
+            <option value="berlin">berlin</option>
+            <option value="warsaw">warsaw</option>
+          </select>
+          <div id="contact_container"></div>
+          <button id="buttonMore" class="btn btn--more">
+            Show me more places
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- All Scripts -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/selectList.js"></script>
+    <script></script>
+  </body>
+</html>

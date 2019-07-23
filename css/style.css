@@ -1,0 +1,123 @@
+.btn-primary {
+  background-color: #d6412d;
+  border-color: #d6412d;
+  -webkit-border-radius: 300px;
+  -moz-border-radius: 300px;
+  border-radius: 300px;
+  font-weight: bold;
+  -webkit-box-shadow: 0px 3px 0px 0px rgba(182, 52, 36, 1);
+  -moz-box-shadow: 0px 3px 0px 0px rgba(182, 52, 36, 1);
+  box-shadow: 0px 3px 0px 0px rgba(182, 52, 36, 1);
+}
+.btn-primary:hover {
+  background-color: #b63424;
+  border-color: #b63424;
+}
+.btn-lg {
+  line-height: 1;
+  padding: 1.5rem 4rem;
+}
+.section-title {
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+}
+.section-title::before {
+  content: "";
+  width: 15rem;
+  position: absolute;
+  right: 100%;
+  margin-right: 4.2rem;
+  top: 50%;
+  border-bottom: 3px solid;
+  opacity: 0.2;
+}
+.section-title::after {
+  content: "";
+  width: 15rem;
+  position: absolute;
+  left: 100%;
+  margin-left: 4.2rem;
+  top: 50%;
+  border-bottom: 3px solid;
+  opacity: 0.2;
+}
+@media (max-width: 767px) {
+  [class*="size-"] {
+    width: 100%;
+  }
+  .content-padding,
+  .content-padding-xs,
+  .content-padding-lg,
+  .content-padding-xl,
+  .content-padding-xxl {
+    padding-bottom: 3.2rem;
+    padding-top: 3.2rem;
+  }
+  #content .row [class*="col-sm-"] {
+    margin-bottom: 2.8rem;
+  }
+
+  .content-padding-mobile-none {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .section-title {
+    display: block;
+  }
+  .section-title::before {
+    display: none;
+  }
+  .section-title::after {
+    display: none;
+  }
+}
+
+.selection p {
+  padding: 0;
+  margin: 0;
+}
+
+select {
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.border {
+  background-color: #f7f7f7;
+  padding: 1.4rem 2.8rem;
+  text-align: center;
+  margin: 10px 0;
+  border-radius: 5px;
+  display: block;
+}
+
+.btn.btn--more {
+  display: block;
+  background-color: #fff;
+  border: 2px solid #8c0615;
+  width: 100%;
+  max-width: 200px;
+  height: 50px;
+  font-size: 16px;
+  padding: 0;
+  margin: 40px auto;
+  color: #222;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s;
+  cursor: pointer;
+  display: none;
+}
+
+.btn.btn--more.active {
+  display: block;
+}
+
+.inactive {
+  display: none;
+}
